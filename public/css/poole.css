@@ -434,3 +434,13 @@ a.pagination-item:hover {
   width: 90%;
   margin: 0 auto;
 }
+
+.line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.line-left {
+  font-weight: 800;
+}
