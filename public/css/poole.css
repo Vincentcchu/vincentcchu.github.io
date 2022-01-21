@@ -107,6 +107,7 @@ h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-size: 0.9rem;
 }
 
 strong {
@@ -118,7 +119,16 @@ strong {
 ul, ol, dl {
   margin-top: 0;
   margin-bottom: 1rem;
+  padding: 0rem;
+  list-style-position: inside;
+  font-size: 0.9rem;
 }
+
+li > ul {
+  padding: revert;
+}
+
+
 
 dt {
   font-weight: bold;
@@ -439,18 +449,49 @@ a.pagination-item:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
 }
 
 @media (min-width: 60em) {
   .line {
     flex-direction: row;
-    margin-bottom: 0rem;
   }
 }
 
 
-.line-left {
-  font-weight: 800;
-  margin-right: 1rem;
+.line-top {
+  /* font-weight: 800; */
+  margin-bottom: 0rem;
+}
+
+.line-bottom {
+  /* font-weight: 800; */
+  margin-bottom: 0rem;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.line-left-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 0.5rem;
+}
+
+
+.line-right-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.line-small {
+  /* font-weight: 800; */
+  font-size: 75%;
+}
+
+
+
+.line-bullet {
+  margin-top: 1px;
 }
